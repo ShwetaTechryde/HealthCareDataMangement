@@ -28,8 +28,8 @@ namespace HealthCareDataMangement.Services
             {
                 Id = (string)row["id"],
                 ExpDate = (DateTime)row["ExpDate"],
-            }.ToString() );
-            
+            });
+            return response.ToList();
         }
 
     }
